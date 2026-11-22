@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Fixora, a device, warranty and service management app.">
+  <title>Privacy Policy - Fixora</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --blue: #356AE6;
+      --ink: #26364A;
+      --muted: #64748b;
+      --bg: #f6f8fc;
+      --card: #ffffff;
+      --line: #e5eaf2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: #263244;
+      font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    header {
+      background: linear-gradient(135deg, #26364A, #356AE6);
+      color: white;
+      padding: 52px 20px 44px;
+    }
+    .header-inner, main, footer { max-width: 850px; margin: 0 auto; }
+    .brand { font-size: 14px; font-weight: 700; letter-spacing: .16em; opacity: .9; }
+    h1 { margin: 12px 0 8px; font-size: clamp(30px, 6vw, 42px); line-height: 1.15; }
+    header p { margin: 0; color: #e8efff; }
+    main { padding: 28px 18px 56px; }
+    .intro, section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 5px 18px rgba(38, 54, 74, .035);
+    }
+    .meta { color: var(--muted); font-size: 14px; margin-top: 12px; }
+    h2 { color: var(--ink); font-size: 20px; line-height: 1.35; margin: 0 0 12px; }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+    ul { padding-left: 22px; margin: 8px 0 12px; }
+    li { margin: 5px 0; }
+    a { color: var(--blue); overflow-wrap: anywhere; }
+    .note {
+      border-left: 4px solid var(--blue);
+      background: #f1f5ff;
+      border-radius: 8px;
+      padding: 13px 16px;
+      margin-top: 14px;
+    }
+    footer { padding: 0 18px 36px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 560px) {
+      header { padding: 38px 20px 32px; }
+      .intro, section { padding: 19px; border-radius: 12px; }
+      main { padding: 18px 12px 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">FIXORA</div>
+      <h1>Privacy Policy</h1>
+      <p>How Fixora handles your information.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <p>Fixora helps you keep track of devices, purchases, warranties, service schedules, expenses and receipts. This Privacy Policy explains what information the app stores, how its features use that information, and what happens when you back up or share your records.</p>
+      <div class="meta">
+        <strong>Effective date:</strong> 22 November 2026<br>
+        <strong>Developer:</strong> Hrishikesh Kagawade<br>
+        <strong>Contact:</strong> <a href="mailto:hrishikeshkagawade@gmail.com">hrishikeshkagawade@gmail.com</a>
+      </div>
+    </div>
+
+    <section>
+      <h2>1. Information You Enter or Provide</h2>
+      <p>Depending on the features you use, Fixora may store information that you choose to enter or attach, including:</p>
+      <ul>
+        <li>Device or item names and categories.</li>
+        <li>Purchase dates, prices and warranty details.</li>
+        <li>Service schedules, service dates and service history.</li>
+        <li>Service centre names and phone numbers.</li>
+        <li>Service descriptions, expenses, labour charges and notes.</li>
+        <li>Receipt photos that you select or capture.</li>
+        <li>App preferences, such as your display name, theme and reminder preferences.</li>
+      </ul>
+      <p>Fixora uses this information to provide the features you request, such as organising your devices, showing service history, calculating expenses and scheduling reminders.</p>
+    </section>
+
+    <section>
+      <h2>2. Where Information Is Stored</h2>
+      <p>Fixora stores device records and service information in an on-device database. App preferences are stored locally using Android's preferences storage. Receipt photos are copied into Fixora's app-specific private storage.</p>
+      <p>Based on the current implementation, Fixora does not operate its own account system, backend server or cloud synchronisation service. Fixora does not send your device and service records to a developer-operated server.</p>
+    </section>
+
+    <section>
+      <h2>3. Photos: Gallery and Camera</h2>
+      <p>You can attach receipt photos in two ways:</p>
+      <ul>
+        <li><strong>Gallery:</strong> You select an existing image using Android's system Photo Picker.</li>
+        <li><strong>Camera:</strong> You can capture a new image using Android's camera functionality.</li>
+      </ul>
+      <p>After selection or capture, Fixora copies the image into its app-specific private storage so it can be displayed and used in the app. The gallery selection flow uses Android's Photo Picker rather than broad access to your photo library.</p>
+    </section>
+
+    <section>
+      <h2>4. Service Reminders and Notifications</h2>
+      <p>If you enable service reminders and allow notifications on your device, Fixora schedules local reminders through Android's background work and notification functionality. These reminders are intended to notify you about upcoming or due services. They do not require Fixora to send your service schedule to an external reminder server.</p>
+      <p>You can manage the reminder preference in Fixora and notification permissions in Android settings.</p>
+    </section>
+
+    <section>
+      <h2>5. Android Automatic Backup</h2>
+      <p>Fixora has Android automatic backup enabled and its current backup rules include the Fixora database file (<code>fixora.db</code>) and the app's DataStore preferences directory. Android's backup and device-transfer services manage whether and when eligible data is backed up or transferred, subject to device settings, account settings, Android version and service availability.</p>
+      <p>The current backup rules do not explicitly include receipt photos stored in Fixora's <code>bills/</code> directory. Therefore, receipt photos may not be included in Android automatic backups.</p>
+      <p>Android backup is a system-provided feature. Its handling of backup data is governed by Android and the backup service provider's terms and privacy information.</p>
+    </section>
+
+    <section>
+      <h2>6. Manual ZIP Backup and Restore</h2>
+      <p>Fixora provides a manual ZIP backup and restore feature. When you choose to export a backup, Fixora packages supported device records, service records, selected app preferences and associated receipt photos into a ZIP file. Android's document picker lets you choose where to save that file.</p>
+      <p>When restoring, Fixora reads a ZIP file that you select and restores its supported contents to the app.</p>
+      <div class="note">
+        <strong>Backup security:</strong> ZIP backup files created by the current implementation are not encrypted or password-protected by Fixora. Anyone who obtains an accessible copy may be able to inspect its contents. Choose a secure destination and do not share backup files with people you do not trust.
+      </div>
+      <p>Fixora does not automatically upload manual backups. If you choose a cloud-backed location through Android's document picker, that storage provider may handle the file under its own terms and privacy policy.</p>
+    </section>
+
+    <section>
+      <h2>7. PDF Receipt Generation and Sharing</h2>
+      <p>Fixora can generate a PDF receipt containing relevant device and service details, such as the device name, category, service date, description, amount and an associated bill photo when available.</p>
+      <p>The PDF is generated on your device and temporarily stored in the app's cache directory. When you choose to share it, Fixora uses Android's secure file-sharing mechanism to grant the receiving application temporary read access to the selected PDF.</p>
+      <p>You choose the receiving application. That application or its service may process, transmit or retain the PDF according to its own privacy policy. Fixora does not automatically upload or distribute PDF receipts.</p>
+    </section>
+
+    <section>
+      <h2>8. Internet, Analytics and Third-Party Services</h2>
+      <p>According to the developer's current implementation confirmation, Fixora does not connect to an external server or API and does not use a developer-operated cloud service for its core features.</p>
+      <p>Fixora relies on Android system functionality for features such as photo selection, camera capture, notifications, automatic backup, document selection and file sharing. When you use a system feature or choose another app or storage provider, that provider may process information under its own terms and privacy policy.</p>
+      <p>This statement describes the current app implementation and should be updated if future versions add analytics, advertising, crash-reporting SDKs, online services or other third-party integrations.</p>
+    </section>
+
+    <section>
+      <h2>9. Data Sharing and Sale</h2>
+      <p>Fixora does not sell your information. Fixora does not automatically send your locally stored device, service or receipt information to other people.</p>
+      <p>Information can leave the app's private storage when you choose to export a backup, share a PDF, or use Android-managed backup or transfer features. The destination or receiving service then handles that information under its own policies.</p>
+    </section>
+
+    <section>
+      <h2>10. Retention and Deletion</h2>
+      <p>Your records remain in Fixora's app storage until you delete them, use an available data-clearing feature, or remove the app and its local data. Archiving a device hides it from the active device list; archiving is not the same as deleting all associated information.</p>
+      <p>Files exported to another location, copies shared with other apps, and data retained by Android backup services are separate from Fixora's local app storage. You are responsible for managing those copies with the relevant storage provider or recipient.</p>
+      <p>Generated PDF files are stored in the app cache. Android may clear cache files when storage space is needed; Fixora does not promise a specific retention period for these temporary files.</p>
+    </section>
+
+    <section>
+      <h2>11. Security</h2>
+      <p>Fixora stores its records and receipt photos in app-specific storage, which is protected by Android's application security model. Data security also depends on the security of your device, its operating system and any destination you choose for exported or shared files.</p>
+      <p>Manual ZIP backups are not encrypted by Fixora. No method of storage or transmission can be guaranteed to be completely secure.</p>
+    </section>
+
+    <section>
+      <h2>12. Children's Privacy</h2>
+      <p>Fixora is a general-purpose device and service management application and is not specifically designed to collect personal information from children. If you have a concern about information entered into the app, please contact the developer using the email below.</p>
+    </section>
+
+    <section>
+      <h2>13. Changes to This Policy</h2>
+      <p>This Privacy Policy may be updated if Fixora's features, data practices or applicable requirements change. The updated policy will be published at this same URL. The effective date at the top of this page will be revised when changes are made.</p>
+    </section>
+
+    <section>
+      <h2>14. Contact</h2>
+      <p>If you have questions or concerns about this Privacy Policy or Fixora's handling of information, contact:</p>
+      <p><strong>Hrishikesh Kagawade</strong><br>
+      Fixora Developer<br>
+      Email: <a href="mailto:hrishikeshkagawade@gmail.com">hrishikeshkagawade@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Fixora. This Privacy Policy applies to the current version of the Fixora application and may be updated as the app changes.
+  </footer>
+</body>
+</html>
